@@ -1,47 +1,44 @@
-# guest-room-booking
-A room booking system built with Xampp(mysql), Express, Node.js.
+Guest Room Booking
 
-# Getting started
+This application is for Guests and House owners.It helps the House owners to rent their Rooms for Guests who can book it.
 
-These instructions will get you a copy of the project up and running on your local machine for development purposes.
+Guests can register for an account with their email address and mobile number.
+They can choose a available rooms.
+Book the service at a particular date.
 
-Prerequisites
+For House Owner:
+- Can able to create / edit / delete all his/her rooms and details
+- View a list of all bookings 
+- View details of each booking
 
-Back-end:
-Xampp
-Express
-Node.js
+For Guest:
+- Can able to register for an account with his email address and mobile number
+- Book a Rooms at the rate of minimum 1 day and Maximum 30 Days.
 
-{
-  "name": "demo",
-  "version": "1.0.0",
-  "description": "guest room booking",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Santhosh",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.0",
-    "cryptr": "^6.0.3",
-    "dotenv": "^16.0.1",
-    "email-validator": "^2.0.4",
-    "express": "^4.18.1",
-    "express-flash": "0.0.2",
-    "express-handlebars": "^6.0.6",
-    "express-session": "^1.17.3",
-    "fs": "^0.0.1-security",
-    "jsonwebtoken": "^8.5.1",
-    "method-override": "^3.0.0",
-    "mysql": "^2.18.1",
-    "nodemailer": "^6.7.5",
-    "rand-token": "^1.0.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  }
-}
+Front-End:
+  -HTML
+  -CSS
+  -Bootstrap
 
+Back-End:
+  -Node.Js
 
+Database:
+  -MySQL
+
+Applications:
+  -Xampp
+  -Any Browser(Chrome Recommended)
+  -Code Editor
+
+Getting Started: 
+    -Download Project
+    -Install node.js
+    -Install XAMMP
+    -Install Dependencies refer Package.json
+    -Import the Database from the models folder 
+
+To Run :
+
+  Open the Terminal & Type "npm start"
+  Open  the browser & Type "localhost:1212" for execution
