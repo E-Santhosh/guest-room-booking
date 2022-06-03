@@ -1,0 +1,39 @@
+<head>
+    <link rel="stylesheet" href="/public/css/table.css">
+</head>
+<body>
+<div>
+    <h3>Guest Room management</h3>
+<p><a href="/adduser" class="addbtn">Add Room</a></p>
+<table>
+    <thead>
+        <td>#</td>
+        <td>Guest Room Name</td>
+        <td>Rooms Available</td>
+        <td>No of Cots</td>
+        <td>Location</td>
+        <td>Booking Duration(days)</td>
+        <td>Rent Per Day</td>
+        <td>Room Photos</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </thead>
+    <tbody>
+      {{#each rows }}
+      <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.room_name}}</td>
+          <td>{{this.room_size}}</td>
+          <td>{{this.noOfCots}}</td>
+          <td>{{this.location}}</td>
+          <td>{{this.duration}}</td>
+          <td>{{this.rent}}</td>
+          <td>{{this.image}}</td>
+          <td><a class="edit" href="/edituser/{{this.id}}">Edit</a></td>
+          <td><a class="delete" href="/deleteuser/{{this.id}}">Delete</a></td>
+      </tr>
+      {{/each}}  
+    </tbody>
+</table>
+</div>
+</body>

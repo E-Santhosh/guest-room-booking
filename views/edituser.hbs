@@ -1,0 +1,48 @@
+<head>
+    <link rel="stylesheet" href="/public/css/table.css">
+</head>
+<h3>Edit Room Details</h3>
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+{{#each rows}}
+<form method="post" action="/edituser/{{this.id}}" autocomplete="off">
+<div class=""form-group>
+    <div class="form-group">
+        <label for="room_name">Guest Room Name</label>
+        <input type="text" name="room_name" value="{{this.room_name}}" required>
+    </div>
+    <div class="form-group">
+        <label for="room_size">Room Size</label>
+        <input type="text" name="room_size" value="{{this.room_size}}" required>
+    </div>
+    <div class="form-group">
+        <label for="noOfCots">No of Cots</label>
+        <input type="number" name="noOfCots" value="{{this.noOfCots}}" required>
+    </div>
+    <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" name="location" value="{{this.location}}" required>
+    </div>
+    <div class="form-group">
+        <label for="duration">Booking Duration(days)</label>
+        <input type="number" name="duration"  value="{{this.duration}}" required>
+    </div>
+    <div class="form-group">
+        <label for="rent">Rent Per Day</label>
+        <input type="number" name="rent" value="{{this.rent}}" required>
+    </div>
+     <div class="form-group">
+        <label for="image">Room Photos</label>
+        <input type="file" name="image" value="{{this.image}}" required>
+    </div>
+     <div class="form-group">
+        <button type="submit" class="button">Update Room Details</button>
+        <button class="button"><a href="table">View all</a></button>
+
+    </div>
+    </div>
+</div>
+
+</form>
+{{/each}}
